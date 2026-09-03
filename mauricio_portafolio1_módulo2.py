@@ -35,7 +35,7 @@ train = pd.read_csv(ruta_train)
 print("Tamaño de train.csv:", train.shape)
 
 print("\nTrain")
-display(train.head())
+print(train.head())
 
 #Valores faltantes
 print("\nValores faltantes:")
@@ -103,7 +103,7 @@ def preparar_datos(df):
 X = preparar_datos(train)
 y = train["Survived"].to_numpy()
 
-display(X.head())
+print(X.head())
 
 """###6. Separación de entrenamiento y prueba
 
@@ -542,4 +542,4 @@ ejemplos["Correcta"] = (
     == ejemplos["Prediccion"]
 )
 
-display(ejemplos)
+print(ejemplos)
