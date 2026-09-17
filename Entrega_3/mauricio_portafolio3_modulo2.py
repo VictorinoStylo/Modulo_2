@@ -26,7 +26,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 Identifica el archivo train.csv en la ruta especificada. 
 """
 
-ruta_train = r"C:\Users\mauri\Downloads\train.csv"
+ruta_train = "train.csv"
 train = pd.read_csv(ruta_train)
 print("Tamaño de train.csv:", train.shape)
 print("\nTrain")
